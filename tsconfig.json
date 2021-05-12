@@ -16,5 +16,6 @@
       "es2018",
       "dom"
     ]
-  }
+  },
+  "include": [ "**/*.ts", "../node_modules/angular-bootstrap-md/index.ts" ]
 }

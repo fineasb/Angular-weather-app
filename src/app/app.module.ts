@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { Allroutes } from './routes';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -18,11 +19,13 @@ import { ApixuService } from "./apixu.service";
   ],
   imports: [
     BrowserModule,
+    MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(Allroutes),
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule
   ],
+  schemas: [NO_ERRORS_SCHEMA],
   providers: [ApixuService],
   bootstrap: [AppComponent]
 })
