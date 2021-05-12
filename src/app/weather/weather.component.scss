@@ -1,5 +1,10 @@
 *{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(0, 0, 0);
+}
+
+rect{
+    background-color: blue;
 }
 
 input{
@@ -9,13 +14,27 @@ input{
     border-bottom-right-radius: 0px;
 }
 
+
 #carduri{
     display: flex;
     justify-content: center;
-    width: max-content;
-    margin: auto;
     text-align: center;
+    margin: auto;
 }
+
+@media only screen and (max-width: 576px) {
+    #carduri{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
+    
+
+  }
+
+
 
 #searchbtn{
     border-top-left-radius: 0px;
@@ -24,29 +43,29 @@ input{
     border-bottom-right-radius: 100px;
 }
 
-#Layer_3:hover{
+#Layer:hover{
     opacity: 0.6;
     cursor: pointer;
 }
 
-#Layer_3{
+#Layer{
     margin-top: 40px;
 }
 
-#Layer_4:hover{
+#Layer:hover{
     opacity: 0.6;
     cursor: pointer;
 }
 
-#Layer_4{
+#Layer{
     margin-top: 40px;
 }
 
-#Layer_5:hover{
+#Layer:hover{
     opacity: 0.6;
     cursor: pointer;
 }
 
-#Layer_5{
+#Layer{
     margin-top: 40px;
 }

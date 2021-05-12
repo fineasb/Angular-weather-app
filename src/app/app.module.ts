@@ -4,6 +4,9 @@ import { Allroutes } from './routes';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, LegendService, TooltipService } from '@syncfusion/ej2-angular-charts';
+import { DataLabelService, LineSeriesService} from '@syncfusion/ej2-angular-charts';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -23,10 +26,11 @@ import { ApixuService } from "./apixu.service";
     RouterModule.forRoot(Allroutes),
     AppRoutingModule,
     ReactiveFormsModule,
+    ChartModule,
     HttpClientModule
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [ApixuService],
+  providers: [ApixuService,  CategoryService, LegendService, TooltipService, DataLabelService, LineSeriesService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
