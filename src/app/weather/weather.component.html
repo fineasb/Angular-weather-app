@@ -1,8 +1,8 @@
 <nav class="navbar navbar-light" style=" width:100%; height: 50%; background-color: #098ae6bc;">
   <div class="container-fluid">
     <a style="color: white;" class="navbar-brand mx-3">Weather App</a>
-    <form style="display: flex; align-items: center;" [formGroup]="weatherSearchForm" (ngSubmit)="sendToAPIXU(weatherSearchForm.value)">
-      <div class="form-group my-3">
+    <form id="formulet" style="display: flex; align-items: center;" [formGroup]="weatherSearchForm" (ngSubmit)="sendToAPIXU(weatherSearchForm.value)">
+       <div id="input1" class="form-group my-3">
         <input 
           formControlName="location"
           class="form-control"

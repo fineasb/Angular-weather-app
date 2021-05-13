@@ -30,7 +30,11 @@ input{
         text-align: center;
         margin: auto;
     }
-    
+
+    div.container-fluid{
+        display: flex;
+        flex-wrap: nowrap;
+    }    
 
   }
 
